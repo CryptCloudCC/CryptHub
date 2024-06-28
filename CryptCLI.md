@@ -1,3 +1,0 @@
-# CryptCLI
-
-## Made with?

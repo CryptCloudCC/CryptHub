@@ -1,5 +1,0 @@
-# Backend Components
-
-
-## [[CryptDB]] (Database)
-
