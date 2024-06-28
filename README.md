@@ -1,8 +1,9 @@
 # CryptHub
 
-## What is [[CryptHub]]?
+## What is CryptHub?
 
- `Offensive Cyber Operations` `Framework`
+[CryptHub](https://github.com/CryptCloudCC/CryptHub) is a **modular** platform for conducting `Offensive Cyber Operations`
+It exists as a `Framework` of tools and is designed to be customized & modified to your organization's needs & use case.
 
 
 
