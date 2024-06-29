@@ -48,9 +48,15 @@ CRYPTHUB_COMPONENTS: dict = {
     
 }
 
-
-
-
+def clone_component_repos_to_components_directory():
+    
+    ## Establish the relative path of the components directory
+    ## `CryptHub-Platform/CryptHub-Components`
+    CRYPTHUB_COMPONENTS_DIRECTORY: str = "CryptHub-Platform/CryptHub-Components"
+    
+    for component in CRYPTHUB_COMPONENTS:
+        subprocess.run(f"git clone {CRYPTHUB_COMPONENTS[component]['url']}", shell=True, cwd=CRYPTHUB_COMPONENTS_DIRECTORY)
+        subprocess.run(f"cd {CRYPTHUB_COMPONENTS_DIRECTORY}/{CRYPTHUB_COMPONENTS[component]['name']} && git checkout {CRYPTHUB_COMPONENTS[component]['branch']}", shell=True, cwd=CRYPTHUB_COMPONENTS_DIRECTORY)
 
 def main():
     pass
